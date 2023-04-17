@@ -308,7 +308,7 @@ export default function EnhancedTable() {
 
       setVisibleRows(updatedRows);
 
-      // Avoid a layout jump when reaching the last page with empty rows.
+      
       const numEmptyRows =
         newPage > 0 ? Math.max(0, (1 + newPage) * rowsPerPage - rows.length) : 0;
 
@@ -333,7 +333,7 @@ export default function EnhancedTable() {
 
       setVisibleRows(updatedRows);
 
-      // There is no layout jump to handle on the first page.
+      
       setPaddingHeight(0);
     },
     [order, orderBy],
